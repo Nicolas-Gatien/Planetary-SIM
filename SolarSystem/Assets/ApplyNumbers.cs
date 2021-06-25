@@ -17,6 +17,6 @@ public class ApplyNumbers : MonoBehaviour
     void Update()
     {
         rb.mass = transform.localScale.x * 4 * transform.localScale.x;
-        g.GRAVITY_PULL = transform.localScale.x * 2;
+        g.gravityPull = transform.localScale.x * 2;
     }
 }

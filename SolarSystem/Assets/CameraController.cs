@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -88,7 +87,7 @@ public class CameraController : MonoBehaviour
     void NextPlanet()
     {
         planets.Clear();
-        planets.AddRange(GameObject.FindGameObjectsWithTag("Planet"));
+        planets.AddRange(GameObject.FindGameObjectsWithTag("Matter"));
         SortPlanetBySize();
         if (planetIndex >= planets.Count)
         {

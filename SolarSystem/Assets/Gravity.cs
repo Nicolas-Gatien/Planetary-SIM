@@ -1,26 +1,21 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 [RequireComponent(typeof(SphereCollider))]
 public class Gravity : MonoBehaviour
 {
-    [SerializeField] public float GRAVITY_PULL = .78f;
+    public float gravityPull;
     public static float m_GravityRadius = 1f;
+
     void Awake()
     {
-        m_GravityRadius = GetComponent<SphereCollider>().radius;
+        m_GravityRadius = GetComponent<SphereCollider>().radius; // set gravity radius to SphereCollider radius
     }
-    /// <summary>
-    /// Attract objects towards an area when they come within the bounds of a collider.
-    /// This function is on the physics timer so it won't necessarily run every frame.
-    /// </summary>
-    /// <param name="other">Any object within reach of gravity's collider</param>
+
     void OnTriggerStay(Collider other)
     {
-        if (other.attachedRigidbody)
+        if (other.attachedRigidbody) // if the other object has a rigidbody
         {
             float gravityIntensity = Vector3.Distance(transform.position, other.transform.position) / m_GravityRadius;
-            other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * GRAVITY_PULL * Time.smoothDeltaTime);
+            other.attachedRigidbody.AddForce((transform.position - other.transform.position) * gravityIntensity * other.attachedRigidbody.mass * gravityPull * Time.smoothDeltaTime);
             Debug.DrawRay(other.transform.position, transform.position - other.transform.position);
         }
     }
