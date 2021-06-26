@@ -31699,3 +31699,4 @@ Received Import Request.
 Start importing Assets/Scripts/Spawner.cs using Guid(fd96b7bfd3c684b45a61c9c97e95259e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf401bcc217f0956863616166a8d569e') in 0.038785 seconds
   Import took 0.095464 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
