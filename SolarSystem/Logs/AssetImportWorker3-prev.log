@@ -15,12 +15,12 @@ D:/VRProjects/Planetary-SIM/SolarSystem
 -logFile
 Logs/AssetImportWorker3.log
 -srvPort
-56069
+51944
 Successfully changed project path to: D:/VRProjects/Planetary-SIM/SolarSystem
 D:/VRProjects/Planetary-SIM/SolarSystem
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 100.25 ms, found 9 plugins.
-Preloading 1 native plugins for Editor in 1.64 ms.
+Refreshing native plugins compatible for Editor in 91.43 ms, found 9 plugins.
+Preloading 1 native plugins for Editor in 1.55 ms.
 Initialize engine version: 2020.3.2f1 (8fd9074bf66c)
 [Subsystems] Discovering subsystems at path D:/Unity Projects/2020.3.2f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/VRProjects/Planetary-SIM/SolarSystem/Assets
@@ -36,5 +36,5 @@ Initialize mono
 Mono path[0] = 'D:/Unity Projects/2020.3.2f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Projects/2020.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity Projects/2020.3.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
 Begin MonoManager ReloadAssembly
